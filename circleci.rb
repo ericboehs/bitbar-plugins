@@ -1,4 +1,4 @@
-#! /usr/local/opt/ruby/bin/ruby
+#! /usr/bin/env ruby
 require 'bundler/inline'
 
 gemfile do

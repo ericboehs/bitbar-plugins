@@ -2,6 +2,7 @@
 
 ## Circle CI
 ```
+sudo /usr/bin/gem install bundler
 cp .env.example .env
 vi .env # Add your config vars
 ln -s ~/Code/bitbar-plugins/.env ~/Documents/BitBar/.env
