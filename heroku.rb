@@ -64,7 +64,7 @@ releases = JSON.parse releases
 deploys = String.new
 require 'time'
 releases.each do |release|
-  time = Time.parse(release['created_at']).localtime.strftime('%b %d @ %-I:%M%p')
+  time = Time.parse(release['created_at']).localtime.strftime('%b %d @ %-I:%M:%S %p')
 
   deploys += "v#{release['version']} - #{time}\n" +
   "--#{release['description']} | href='https://dashboard.heroku.com/apps/#{app}/activity'\n" +
